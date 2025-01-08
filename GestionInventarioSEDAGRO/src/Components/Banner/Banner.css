@@ -1,0 +1,20 @@
+#Banner {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 13%;
+    width: 100vw;
+    background-image: url(".\Assets\Banner-fondo.png");
+    background-size: contain;
+    background-position: center;
+    margin: 0px;
+
+    img{
+        margin-top: 1%;
+        align-self: center;
+        height: 180%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
