@@ -1,14 +1,12 @@
-import { Bienes } from "./BienesDefinition";
-
 export interface Sort {
   empty: boolean;
   sorted: boolean;
   unsorted: boolean;
 }
 
-export interface Pageable {
-  content: Bienes[];
-  pageable: Pageable;
+export interface Pageable<T> {
+  content: T[];
+  pageable: Pageable<T>;
   last: boolean;
   totalPages: number;
   totalElements: number;
