@@ -5,18 +5,24 @@ div {
 html,
 body {
     margin: 0;
+    margin-top: 8vh;
 }
 
 header {
     margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 0;
+    width: 100%;
+    z-index: 1000;
 
     div {
         display: flex;
         background-image: url("./assets/Banner-fondo.png");
         background-size: contain;
         background-position: center;
-        height: 15vh;
+        height: 12vh;
         width: 100%;
         margin: 0;
     }

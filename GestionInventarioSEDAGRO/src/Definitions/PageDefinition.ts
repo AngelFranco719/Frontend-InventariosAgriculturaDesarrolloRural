@@ -17,3 +17,11 @@ export interface Pageable<T> {
   numberOfElements: number;
   empty: boolean;
 }
+
+export function getPageSize(data: Pageable<any>) {
+  return data.size;
+}
+
+export function getMaximumResults(data: Pageable<any>) {
+  return data.totalElements;
+}

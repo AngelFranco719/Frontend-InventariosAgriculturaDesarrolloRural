@@ -7,6 +7,8 @@ import {
   ValidationModule,
   TextEditorModule,
   TextFilterModule,
+  ModuleRegistry,
+  RowSelectionModule,
 } from "ag-grid-community";
 import "./Tables.css";
 import { BienesRows } from "../../Definitions/BienesDefinition";
@@ -25,11 +27,18 @@ export const Table = <T,>({ datos, rows, columns }: props<T>) => {
     console.log(columns);
   }, []);
 
+  const rowSelectedEvent = () => {
+    console.log("Seleccionaste una");
+  };
+
+  ModuleRegistry.registerModules([RowSelectionModule]);
   return (
     <div className="Table" style={{ height: 500, width: 1000 }}>
       <AgGridReact
         rowData={rows}
         columnDefs={columns}
+        rowSelection={"single"}
+        onRowSelected={rowSelectedEvent}
         modules={[
           ClientSideRowModelModule,
           ValidationModule,

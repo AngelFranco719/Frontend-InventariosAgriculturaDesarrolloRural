@@ -24,18 +24,32 @@ export interface BienesRows {
 }
 
 export const BienesCols: ColDef[] = [
-  { field: "Inventario" },
-  { field: "Producto" },
-  { field: "Marca" },
-  { field: "Responsable" },
+  { field: "Inventario", checkboxSelection: true },
+  { field: "Producto",},
+  { field: "Marca",},
+  { field: "Responsable", },
+  { field: "Fecha de Resguardo", },
 ];
 
 export function getBienesRows(page: Pageable<Bienes>) {
   const datos = page.content;
-  return datos.map((item) => ({
-    Inventario: item.bien_inventario,
-    Producto: item.bienProducto.prod_descripcion,
-    Marca: item.bienProducto.prod_marca,
-    Responsable: item.bienResponsable.res_nombre,
-  }));
+  return datos.map((item) => {
+    let fecha: Date = new Date();
+    if (item.bienResponsable.res_fechaResguardo) {
+      fecha = new Date(item.bienResponsable.res_fechaResguardo);
+    }
+    return {
+      Inventario: item.bien_inventario,
+      Producto: item.bienProducto.prod_descripcion,
+      Marca: item.bienProducto.prod_marca,
+      Responsable: item.bienResponsable.res_nombre,
+      "Fecha de Resguardo": fecha.toLocaleDateString(),
+    };
+  });
 }
+
+/*
+({
+    
+  })
+*/
