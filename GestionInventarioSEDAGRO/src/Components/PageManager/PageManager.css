@@ -1,7 +1,9 @@
 #PageManager {
     height: 4vh;
     width: 100%;
-    margin-top: 0.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 1.5%;
     display: flex;
     flex-direction: row;
     justify-content: right;

@@ -1,8 +1,8 @@
-import { ColDef } from "ag-grid-community";
 import { Adquisicion } from "./AdquisicionDefinition";
 import { Pageable } from "./PageDefinition";
 import { Producto } from "./ProductoDefinition";
 import { Responsable } from "./ResponsableDefinition";
+import { ZonaArea } from "./ZonaAreaDefinitions";
 
 export interface Bienes {
   bien_inventario: string;
@@ -10,10 +10,12 @@ export interface Bienes {
   bien_color: string;
   bien_material: string;
   bien_patrimoniable: string;
+  bien_serie: string;
   id_Bien: number;
   bienAdq: Adquisicion;
   bienResponsable: Responsable;
   bienProducto: Producto;
+  bien_zonaArea: ZonaArea;
 }
 
 export interface BienesRows {
@@ -23,14 +25,6 @@ export interface BienesRows {
   Responsable: string;
 }
 
-export const BienesCols: ColDef[] = [
-  { field: "Inventario", checkboxSelection: true },
-  { field: "Producto",},
-  { field: "Marca",},
-  { field: "Responsable", },
-  { field: "Fecha de Resguardo", },
-];
-
 export function getBienesRows(page: Pageable<Bienes>) {
   const datos = page.content;
   return datos.map((item) => {
@@ -39,6 +33,7 @@ export function getBienesRows(page: Pageable<Bienes>) {
       fecha = new Date(item.bienResponsable.res_fechaResguardo);
     }
     return {
+      ID: item.bien_inventario,
       Inventario: item.bien_inventario,
       Producto: item.bienProducto.prod_descripcion,
       Marca: item.bienProducto.prod_marca,

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'CherrySwash';
+    src: url('/Assets/Fonts/CherrySwash-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.productInfo {
+    padding-bottom: 0px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    font-family: "CherrySwash";
+    justify-items: right;
+
+    Input {
+        width: fit-content;
+        background-color: white;
+    }
+}
+
+.pItem {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: right;
+
+    .sendButton {
+        margin-top: 3%;
+    }
+}
+
+.twoDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.datePicker {
+    background-color: white !important;
+    cursor: auto !important;
+    width: 50%;
+
+    .ant-picker-input {
+        input {
+            color: black !important;
+            cursor: auto !important;
+        }
+    }
+}

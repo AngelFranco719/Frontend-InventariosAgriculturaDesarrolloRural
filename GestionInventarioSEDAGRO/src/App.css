@@ -35,3 +35,31 @@ header {
         object-fit: contain;
     }
 }
+
+@font-face {
+    font-family: 'Cherry Swash';
+    src: url('./assets/Fonts/CherrySwash-Regular.woff') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/Fonts/Roboto-Regular.woff') format('truetype');
+}
+
+.cherry-swash-regular {
+    font-family: "", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Roboto {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cherry-swash-bold {
+    font-family: "Cherry Swash", serif;
+    font-weight: 700;
+    font-style: normal;
+}

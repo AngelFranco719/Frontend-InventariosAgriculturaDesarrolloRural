@@ -1,6 +1,5 @@
 .Table {
-
-    height: 600px;
-    width: 1000px;
-
+    height: 100%;
+    width: 100%;
+    padding: 1%;
 }

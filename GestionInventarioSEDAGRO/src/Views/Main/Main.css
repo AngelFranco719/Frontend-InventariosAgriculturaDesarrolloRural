@@ -1,28 +1,18 @@
 .DivMain {
     display: flex;
-    flex-direction: column;
     height: 100%;
     width: 100%;
-    align-items: center;
-    margin-bottom: 2%;
-
-    .results {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 13px;
-        text-align: left;
-        justify-self: left;
-        margin-left: 2%;
-        margin-bottom: 4px;
-        color: rgb(97, 97, 97);
-    }
-
-    .divTabla {
-        width: max-content;
-    }
 }
 
 .TagsDiv {
     display: flex;
     gap: 1.5%;
 
+}
+
+#Layout {
+    margin-top: -20px;
+    padding: 0px;
+    height: 86vh;
+    width: 100%;
 }

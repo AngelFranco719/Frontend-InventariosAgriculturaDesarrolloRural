@@ -5,7 +5,8 @@ import {
   isProducto,
   isResponsable,
 } from "../TypeGuards/InterfacesTypeGuards";
-import { Bienes, BienesCols, getBienesRows } from "./BienesDefinition";
+import { Bienes, getBienesRows } from "./BienesDefinition";
+import { BienesCols } from "./BienesCols";
 import { Pageable } from "./PageDefinition";
 import { getProductoRows, Producto, ProductoCols } from "./ProductoDefinition";
 import {

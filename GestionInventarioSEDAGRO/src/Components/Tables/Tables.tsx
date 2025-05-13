@@ -33,12 +33,13 @@ export const Table = <T,>({ datos, rows, columns }: props<T>) => {
 
   ModuleRegistry.registerModules([RowSelectionModule]);
   return (
-    <div className="Table" style={{ height: 500, width: 1000 }}>
+    <div className="Table" style={{ height: "74vh", width: "100%" }}>
       <AgGridReact
         rowData={rows}
         columnDefs={columns}
         rowSelection={"single"}
         onRowSelected={rowSelectedEvent}
+        masterDetail
         modules={[
           ClientSideRowModelModule,
           ValidationModule,

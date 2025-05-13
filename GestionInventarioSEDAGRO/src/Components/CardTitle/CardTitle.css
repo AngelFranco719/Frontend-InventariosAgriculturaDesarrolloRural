@@ -1,0 +1,13 @@
+.spanTitle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .spanTitle {
+        display: flex;
+        gap: 10px;
+    }
+
+    .switch {
+        justify-self: right;
+    }
+}

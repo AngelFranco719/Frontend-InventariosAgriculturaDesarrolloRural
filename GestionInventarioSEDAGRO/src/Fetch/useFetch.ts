@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Pageable } from "../Definitions/PageDefinition";
+import { Bienes } from "../Definitions/BienesDefinition";
 
 export type useFetchState = {
   state:
@@ -7,7 +8,7 @@ export type useFetchState = {
     | "Cargando Información"
     | "Error al Obtener los Datos"
     | "Obtención de Datos Exitosa";
-  data: any | Pageable;
+  data: any | Pageable<Bienes>;
   error: null | Error;
 };
 

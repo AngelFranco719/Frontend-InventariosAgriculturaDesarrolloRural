@@ -10,8 +10,8 @@ export interface Responsable {
 }
 
 export const ResponsableCols: ColDef[] = [
-  { field: "Nombre" },
-  { field: "RFC" },
+  { field: "Nombre", flex: 2 },
+  { field: "RFC", flex: 1 },
 ];
 
 export function getResponsableRows(data: Pageable<Responsable>) {
