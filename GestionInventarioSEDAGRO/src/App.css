@@ -19,7 +19,7 @@ header {
 
     div {
         display: flex;
-        background-image: url("Frontend-InventariosAgriculturaDesarrolloRural\GestionInventarioSEDAGRO\dist\Assets\Banner-fondo-BLE6Uqij.png");
+        background-image: url("./assets/Banner-fondo.png");
         background-size: contain;
         background-position: center;
         height: 12vh;
