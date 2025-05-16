@@ -21,7 +21,7 @@ export const InventoryViewer = () => {
   const [bien, setBien] = useState<Bienes>();
 
   const url: URL = {
-    base: `https://ed6a-2806-105e-8-852b-598f-39ea-c644-73a8.ngrok-free.app/api/Bienes/filter?inventario=${params.inventario}&`,
+    base: `https://ed6a-2806-105e-8-852b-598f-39ea-c644-73a8.ngrok-free.app/Bienes/filter?inventario=${params.inventario}&`,
     page: 0,
     size: 1,
   };
