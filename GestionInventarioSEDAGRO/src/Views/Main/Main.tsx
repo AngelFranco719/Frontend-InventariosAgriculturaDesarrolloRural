@@ -20,7 +20,7 @@ import { generateURL, URL } from "../../Fetch/URLUtils";
 ///Componente
 
 const defaultURL: URL = {
-  base: "https://2b41-189-142-35-3.ngrok-free.app/api/Bienes/filter?",
+  base: "https://51f1-2806-105e-8-852b-598f-39ea-c644-73a8.ngrok-free.app/api/Bienes/filter?",
   page: 0,
   size: 10,
 };
