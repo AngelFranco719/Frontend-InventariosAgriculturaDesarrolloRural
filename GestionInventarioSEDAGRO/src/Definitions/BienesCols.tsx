@@ -13,7 +13,7 @@ export const BienesCols: ColDef[] = [
       const ID = params.data.ID;
 
       const handleOnClick = () => {
-        window.open(`http://localhost:3000/Bien/${ID}`, "_blank");
+        window.open(`/Bien/${ID}`, "_blank");
       };
 
       return (

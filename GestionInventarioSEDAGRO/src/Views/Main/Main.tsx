@@ -20,7 +20,7 @@ import { generateURL, URL } from "../../Fetch/URLUtils";
 ///Componente
 
 const defaultURL: URL = {
-  base: "http://localhost:8080/api/Bienes/filter?",
+  base: "/api/Bienes/filter?",
   page: 0,
   size: 10,
 };

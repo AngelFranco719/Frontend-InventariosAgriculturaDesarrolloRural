@@ -24,7 +24,7 @@ export const FilterTags = (props: filterProps) => {
   const handleClickSearch: MouseEventHandler = () => {
     console.log(props);
     var Url: URL = {
-      base: "http://localhost:8080/api/Bienes/filter?",
+      base: "/api/Bienes/filter?",
       page: 0,
       size: 10,
     };

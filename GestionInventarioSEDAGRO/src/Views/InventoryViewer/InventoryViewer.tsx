@@ -21,7 +21,7 @@ export const InventoryViewer = () => {
   const [bien, setBien] = useState<Bienes>();
 
   const url: URL = {
-    base: `http://localhost:8080/api/Bienes/filter?inventario=${params.inventario}&`,
+    base: `/api/Bienes/filter?inventario=${params.inventario}&`,
     page: 0,
     size: 1,
   };

@@ -1,8 +1,5 @@
 import { Modal } from "antd";
 
-interface props{
-    isOpen : boolean
-}
 
 export const ModalBajas = () => {
     
