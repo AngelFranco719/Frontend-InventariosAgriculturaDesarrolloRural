@@ -30,11 +30,7 @@ export default function useFetch(url: string) {
         state: "Cargando Información",
       }));
 
-      const response = await fetch(url, {
-        headers: {
-          "ngrok-skip-browser-warning": "true",
-        },
-      });
+      const response = await fetch(url);
 
       if (response.ok) {
         const json = await response.json();
